@@ -10,7 +10,6 @@ import { FooterComponent } from './compartido/footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent
-   
   ],
   imports: [
     BrowserModule
