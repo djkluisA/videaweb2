@@ -10,7 +10,7 @@ import { BodyComponent } from './compartido/body/body.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
     BodyComponent
   ],
   imports: [
