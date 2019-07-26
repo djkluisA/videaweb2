@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './compartido/header/header.component';
 import { FooterComponent } from './compartido/footer/footer.component';
 import { BodyComponent } from './compartido/body/body.component';
+import { FormularioComponent } from './compartido/body/formulario/formulario.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BodyComponent } from './compartido/body/body.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule
