@@ -1,30 +1,48 @@
 <div class="caja">
-    <h5>Contactanos</h5>
+    <h5>Contactanos<small>no dudes en escribirnos</small></h5>
     <hr>
     <form>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Seleccione un servicio &nbsp;</label>
-            <select>
-                <option selected disabled>Tus soluciones</option>
-                <option value="1">Manitas</option>
-                <option value="2">Fontaneria</option>
-                <option value="3">Electricidad</option>
-                <option value="4">Gas</option>
-                <option value="5">Reformas</option>
-            </select>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Servicios</label>
+            <div class="col-md-8">
+                <select [(ngModel)]="usuario.servicio" class="form-control" name="servicio">
+                    <option value="">Seleccione un servicio</option>
+                    <option *ngFor="let servicio of servicios"
+                            [value]="servicio.codigo">{{ servicio.nombre }}</option>
+                </select>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="inputAddress">Nombre</label>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Nombre</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Nombre" name="nombre" [(ngModel)]="usuario.nombre" required #nombre="ngModel">
+                <div *ngIf="nombre.errors?.required">
+                    Este campo es requerido
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="inputAddress">Forma de contacto</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Nº de teléfono o correo electrónico">
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Teléfono</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Nº de teléfono" name="telefono" [(ngModel)]="usuario.telefono" #telefono="ngModel">
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Correo</label>
+            <input class="form-control" type="email" placeholder="Correo eclectrónico" name="correo" [(ngModule)]="usuario.correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[az]{2,3}$" #correo="ngModule">
+            <div *ngIf="correo.errors?.required">
+                Este campo es requerido
+            </div>
+            <div *ngIf="correo.errors?.required">
+                El campo no tiene formato de correo
+            </div>
         </div>
+
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Example textarea</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
