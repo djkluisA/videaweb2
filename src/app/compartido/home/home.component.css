@@ -6,8 +6,3 @@
 .carouselExampleFade {
     height: 400px;
 }
-
-#contenedor-titulo-flex {
-    display: flex;
-    justify-content: center;
-}

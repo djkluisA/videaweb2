@@ -10,13 +10,14 @@ import { APP_ROUTING } from './app.routes';
 import { HeaderComponent } from './compartido/header/header.component';
 import { FooterComponent } from './compartido/footer/footer.component';
 import { BodyComponent } from './compartido/body/body.component';
-import { FormularioComponent } from './compartido/body/formulario/formulario.component';
 import { HomeComponent } from './compartido/home/home.component';
 import { ManitasComponent } from './compartido/body/manitas/manitas.component';
 import { FontaneriaComponent } from './compartido/body/fontaneria/fontaneria.component';
 import { ElectricidadComponent } from './compartido/body/electricidad/electricidad.component';
 import { GasComponent } from './compartido/body/gas/gas.component';
 import { ReformasComponent } from './compartido/body/reformas/reformas.component';
+import { TemplateComponent } from './compartido/body/formulario/template/template.component';
+import { DataComponent } from './compartido/body/formulario/data/data.component';
 
 
 @NgModule({
@@ -25,13 +26,14 @@ import { ReformasComponent } from './compartido/body/reformas/reformas.component
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    FormularioComponent,
     HomeComponent,
     ManitasComponent,
     FontaneriaComponent,
     ElectricidadComponent,
     GasComponent,
-    ReformasComponent
+    ReformasComponent,
+    TemplateComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
