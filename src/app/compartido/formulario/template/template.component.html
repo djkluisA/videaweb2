@@ -1,0 +1,19 @@
+<h4>Formulario <small>Prueba</small></h4>
+<hr>
+<form (ngSubmit)="guardar()" #forma="ngForm" novalidate="">
+
+    <div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Nombre</label>
+            <div class="col-8">
+
+                <input class="form-control" type="text" placeholder="Nombre" name="" [ngModel]="usuario.nombre" required minlength="3">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
