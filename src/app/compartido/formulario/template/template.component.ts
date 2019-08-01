@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 
@@ -9,8 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class TemplateComponent {
 
-  usuario: Object = {
-    servicio: "",
+  usuario:Object = {
     nombre: null,
     telefono: null,
     email: null
