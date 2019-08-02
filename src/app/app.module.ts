@@ -20,6 +20,7 @@ import { TemplateComponent } from './compartido/formulario/template/template.com
 import { DataComponent } from './compartido/formulario/data/data.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
