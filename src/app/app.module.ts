@@ -9,10 +9,10 @@ import { APP_ROUTING } from './app.routes';
 // Componentes
 import { HeaderComponent } from './compartido/header/header.component';
 import { FooterComponent } from './compartido/footer/footer.component';
-import { BodyComponent } from './compartido/body/body.component';
 import { HomeComponent } from './compartido/home/home.component';
 import { TemplateComponent } from './compartido/formulario/template/template.component';
 import { DataComponent } from './compartido/formulario/data/data.component';
+
 
 
 
@@ -25,6 +25,9 @@ import { DataComponent } from './compartido/formulario/data/data.component';
     HomeComponent,
     TemplateComponent,
     DataComponent
+  ],
+  [
+    HomeComponent
   ],
   imports: [
     BrowserModule,
