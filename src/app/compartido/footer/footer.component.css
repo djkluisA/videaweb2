@@ -1,12 +1,14 @@
-footer {
-    background: #26a69a;
+p {
+    color: rgb(67, 139, 161);
+    font-weight: bolder;
 }
 
-.subfooter {
-    background-color: teal;
-    background-size: 10%;
+a {
+    color: rgb(67, 139, 161);
+    font-weight: bolder;
+    text-align: center;
 }
 
-.correo {
-    color: whitesmoke;
+img {
+    width: 20%;
 }

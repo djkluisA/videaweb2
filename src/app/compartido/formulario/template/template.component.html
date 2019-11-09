@@ -1,0 +1,47 @@
+<h5>Contactanos<small>no dudes en escribirnos</small></h5>
+<hr>
+<form (ngSubmit="guardar(forma)" #forma="ngForm" novalidate="">
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Servicios</label>
+        <div class="col-md-8">
+            <select [(ngModel)]="usuario.servicio" class="form-control" name="servicio">
+                    <option value="">Seleccione un servicio</option>
+                    <option *ngFor="let servicio of servicios"
+                            [value]="servicio.codigo">{{ servicio.nombre }}</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+        <div class="col-8">
+            <input class="form-control" type="text" placeholder="Nombre" name="nombre" [(ngModel)]="usuario.nombre" required #nombre="ngModel" minlength="3">
+            <div *ngIf="nombre.errors?.required">
+                Este campo es requerido
+            </div>
+            <div *ngIf="nombre.errors?.minlenght">
+                Tiene que contener mas de 3 caracteres
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Teléfono</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+        <div class="col-8">
+            <input class="form-control" type="text" placeholder="Nº de teléfono" name="telefono" [(ngModel)]="usuario.telefono" #telefono="ngModel">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Correo</label>
+        <input class="form-control" type="email" placeholder="Correo eclectrónico" name="correo" [(ngModel)]="usuario.correo" #correo="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[az]{2,3}$">
+        <div *ngIf="correo.errors?.required">
+            Este campo es requerido
+        </div>
+        <div *ngIf="correo.errors?.required">
+            El campo no tiene formato de correo
+        </div>
+    </div>
+</form>

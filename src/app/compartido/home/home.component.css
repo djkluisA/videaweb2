@@ -1,0 +1,96 @@
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+.texto-borde {
+    -webkit-text-stroke: 0.1px black;
+    color: transparent;
+}
+
+img {
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+h3 {
+    color: teal;
+    text-align: center;
+}
+
+#titulo {
+    color: teal;
+}
+
+#espacio {
+    background-color: teal;
+}
+
+p {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.card {
+    position: relative;
+}
+
+#tarjeta {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#tarjeta:hover {
+    opacity: 0.85;
+}
+
+.card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+#texto-tarjeta {
+    color: black;
+}
+
+li {
+    color: black;
+}
+
+.container {
+    border: 5px solid rgb(23, 137, 172);
+}
+
+img {
+    padding: 20px;
+    width: 80%;
+}
