@@ -21,13 +21,9 @@ import { DataComponent } from './compartido/formulario/data/data.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent,
     HomeComponent,
     TemplateComponent,
     DataComponent
-  ],
-  [
-    HomeComponent
   ],
   imports: [
     BrowserModule,

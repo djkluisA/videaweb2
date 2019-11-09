@@ -17,12 +17,11 @@
 img {
     background-repeat: no-repeat;
     width: 100%;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
 }
 
 h3 {
     color: teal;
+    text-align: center;
 }
 
 #titulo {
@@ -43,7 +42,6 @@ h5 {
 
 .card {
     position: relative;
-    width: 50%;
 }
 
 #tarjeta {
@@ -82,4 +80,17 @@ h5 {
 
 #texto-tarjeta {
     color: black;
+}
+
+li {
+    color: black;
+}
+
+.container {
+    border: 5px solid rgb(23, 137, 172);
+}
+
+img {
+    padding: 20px;
+    width: 80%;
 }

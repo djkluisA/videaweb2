@@ -1,0 +1,17 @@
+div {
+    background-color: rgb(67, 139, 161);
+}
+
+div#centro {
+    background-color: blue;
+}
+
+img {
+    padding: 15px;
+}
+
+h4 {
+    text-align: center;
+    padding: 3%;
+    color: white;
+}
