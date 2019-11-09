@@ -90,7 +90,11 @@ li {
     border: 5px solid rgb(23, 137, 172);
 }
 
-img {
+img.carusel {
     padding: 20px;
     width: 80%;
+}
+
+p {
+    color: black;
 }
