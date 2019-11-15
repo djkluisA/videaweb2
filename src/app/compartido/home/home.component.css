@@ -86,7 +86,15 @@ li {
     color: black;
 }
 
-.container {
+.carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     display: block;
+     max-width: 100%;
+     height: 400px !important;
+ }
+
+
+#centro {
     border: 5px solid rgb(23, 137, 172);
 }
 
