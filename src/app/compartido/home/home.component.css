@@ -86,7 +86,7 @@ li {
     color: black;
 }
 
-.container {
+#centro {
     border: 5px solid rgb(23, 137, 172);
 }
 
@@ -97,4 +97,6 @@ img.carusel {
 
 p {
     color: black;
+    width: 100%;
+    align: center;
 }
