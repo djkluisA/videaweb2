@@ -85,18 +85,13 @@ h5 {
 li {
     color: black;
 }
-
 #centro {
     border: 5px solid rgb(23, 137, 172);
+    
 }
 
-img.carusel {
+img {
     padding: 20px;
-    width: 80%;
-}
-
-p {
-    color: black;
     width: 100%;
-    align: center;
+    align:center;
 }
