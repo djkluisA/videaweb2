@@ -89,9 +89,9 @@ li {
 #centro {
     border: 5px solid rgb(23, 83, 172);
     background-color:whitesmoke;
+    opacity:0.9;
     
 }
-
 img {
     padding: 20px;
     width: 100%;
