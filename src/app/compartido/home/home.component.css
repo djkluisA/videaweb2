@@ -20,7 +20,7 @@ img {
 }
 
 h3 {
-    color: teal;
+    color:rgb(23, 83, 172);
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ h3 {
 }
 
 #espacio {
-    background-color: teal;
+    background-color:rgb(23, 83, 172);
 }
 
 p {
@@ -83,10 +83,12 @@ h5 {
 }
 
 li {
-    color: black;
+    color: rgb(135, 173, 222);
+    
 }
 #centro {
-    border: 5px solid rgb(23, 137, 172);
+    border: 5px solid rgb(23, 83, 172);
+    background-color:whitesmoke;
     
 }
 
