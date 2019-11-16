@@ -38,6 +38,10 @@ p {
 
 h5 {
     color: white;
+    font:Verdana;
+}
+h2 {
+    color-adjust:rgb(9, 46, 70);
 }
 
 .card {
