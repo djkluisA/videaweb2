@@ -85,17 +85,9 @@ h5 {
 li {
     color: black;
 }
-
-.carousel-inner > .item > img,
- .carousel-inner > .item > a > img {
-     display: block;
-     max-width: 100%;
-     height: 400px !important;
- }
-
-
 #centro {
     border: 5px solid rgb(23, 137, 172);
+    
 }
 
 img {
